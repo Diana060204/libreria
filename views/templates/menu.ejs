@@ -1,0 +1,253 @@
+<nav class="navbar navbar-expand-lg bg-body-tertiary">
+    <div class="container-fluid">
+       <a class="navbar-brand" href="/">UTSJR</a>
+       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+         <span class="navbar-toggler-icon"></span>
+       </button>
+       <style>
+        body {
+           background-image: url('https://i.pinimg.com/564x/14/c2/c9/14c2c97a886ec244ec91bc25a8871480.jpg');
+            background-image: url('https://assets.puzzlefactory.com/puzzle/428/749/original.jpg'); 
+             /*background: #e5e5e5;*/
+            font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        
+        }
+    
+        .navbar {
+            color: #333; 
+            background: #007BFF; 
+            padding: 10px 0; 
+            border-radius: 0;
+            border: none;
+            box-shadow: 0 0 4px rgba(0, 0, 0, .1);
+        }
+    
+        .navbar img {
+            border-radius: 50%;
+            width: 36px;
+            height: 36px;
+            margin-right: 10px;
+        }
+    
+        .navbar .navbar-brand {
+            color: #fff; 
+            padding-left: 0;
+            padding-right: 50px;
+            font-size: 24px;
+        }
+    
+        .navbar .navbar-brand:hover,
+        .navbar .navbar-brand:focus {
+            color: #ccc; 
+        }
+    
+        .navbar .navbar-brand i {
+            font-size: 25px;
+            margin-right: 5px;
+        }
+    
+        .search-box {
+            position: relative;
+        }
+    
+        .search-box input {
+            padding-right: 35px;
+            min-height: 38px;
+            border: none;
+            background: #fff; 
+            border-radius: 3px !important;
+        }
+    
+        .search-box input:focus {
+            background: #fff;
+            box-shadow: none;
+        }
+    
+        .search-box .input-group-addon {
+            min-width: 35px;
+            border: none;
+            background: transparent;
+            position: absolute;
+            right: 0;
+            z-index: 9;
+            padding: 10px 7px;
+            height: 100%;
+        }
+    
+        .search-box i {
+            color: #007BFF; 
+            font-size: 19px;
+        }
+    
+        .navbar .nav-item i {
+            font-size: 18px;
+        }
+    
+        .navbar .nav-item span {
+            position: relative;
+            top: 3px;
+        }
+    
+        .navbar .navbar-nav>a {
+            color: #007BFF;
+            padding: 8px 15px;
+            font-size: 14px;
+        }
+    
+        .navbar .navbar-nav>a:hover,
+        .navbar .navbar-nav>a:focus {
+            color: #0056b3; 
+            text-shadow: none;
+        }
+    
+        .navbar .navbar-nav>a>i {
+            display: block;
+            text-align: center;
+        }
+    
+        .navbar .dropdown-item i {
+            font-size: 16px;
+            min-width: 22px;
+        }
+    
+        .navbar .dropdown-item .material-icons {
+            font-size: 21px;
+            line-height: 16px;
+            vertical-align: middle;
+            margin-top: -2px;
+        }
+    
+        .navbar .nav-item.open>a,
+        .navbar .nav-item.open>a:hover,
+        .navbar .nav-item.open>a:focus {
+            color: #0056b3; 
+             background: none !important;
+        }
+    
+        .navbar .dropdown-menu {
+            border-radius: 1px;
+            border-color: #e5e5e5;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, .05);
+        }
+    
+        .navbar .dropdown-menu a {
+            color: #333 !important; 
+            padding: 8px 20px;
+            line-height: normal;
+            font-size: 15px;
+        }
+    
+        .navbar .dropdown-menu a:hover,
+        .navbar .dropdown-menu a:focus {
+            color: #007BFF;
+            background: transparent !important;
+        }
+    
+        .navbar .navbar-nav .active a,
+        .navbar .navbar-nav .active a:hover,
+        .navbar .navbar-nav .active a:focus {
+            color: #0056b3; 
+                       text-shadow: none;
+            background: none !important;
+        }
+    
+        .navbar .navbar-nav .user-action {
+            padding: 9px 15px;
+            font-size: 15px;
+        }
+    
+        .navbar .navbar-toggle {
+            border-color: #fff;
+        }
+    
+        .navbar .navbar-toggle .icon-bar {
+            background: #fff;
+        }
+    
+        .navbar .navbar-toggle:focus,
+        .navbar .navbar-toggle:hover {
+            background: transparent;
+        }
+    
+        .navbar .navbar-nav .open .dropdown-menu {
+            background: #fff; 
+            border-radius: 1px;
+            border-color: #fff;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, .05);
+        }
+    
+        .navbar .divider {
+            background-color: #e9ecef !important;
+        }
+    
+        @media (min-width: 1200px) {
+            .form-inline .input-group {
+                width: 350px;
+                margin-left: 30px;
+            }
+        }
+    
+        @media (max-width: 1199px) {
+            .navbar .navbar-nav>a>i {
+                display: inline-block;
+                text-align: left;
+                min-width: 30px;
+                position: relative;
+                top: 4px;
+            }
+    
+            .navbar .navbar-collapse {
+                border: none;
+                box-shadow: none;
+                padding: 0;
+            }
+    
+            .navbar .navbar-form {
+                border: none;
+                display: block;
+                margin: 10px 0;
+                padding: 0;
+            }
+    
+            .navbar .navbar-nav {
+                margin: 8px 0;
+            }
+    
+            .navbar .navbar-toggle {
+                margin-right: 0;
+            }
+    
+            .input-group {
+                width: 100%;
+            }
+        }
+    </style>
+    
+       <div class="collapse navbar-collapse" id="navbarSupportedContent">
+         <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+                <a class="nav-link" href="/inicio">Inicio</a>
+              </li>
+           <li class="nav-item">
+             <a class="nav-link active" aria-current="page" href="/">Mostrar usuario</a>
+           </li>
+           <li class="nav-item">
+             <a class="nav-link" href="/nuevousuario">Nuevo usuario</a>
+           </li>
+           <li class="nav-item">
+             <a class="nav-link active" aria-current="page" href="/productos">Mostrar libros</a>
+           </li>
+           <li class="nav-item">
+             <a class="nav-link" href="/nuevoproducto">Nuevo libro</a>
+           </li>
+           <li class="nav-item">
+             <a class="nav-link" href="/buscarlibros">Buscar libros</a>
+           </li>
+         </ul>
+         <form class="d-flex" role="search" method="get" action="/buscarlibros">
+           <input class="form-control me-2" type="search" placeholder="Buscar" aria-label="Search" name="buscar">
+           <button class="btn btn-outline-primary" type="submit">Buscar</button>
+         </form>
+       </div>
+    </div>
+   </nav>
